@@ -1,12 +1,12 @@
 package br.com.rd.ecom.user;
 
+import br.com.rd.ecom.repository.UserRepository;
 import br.com.rd.ecom.user.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class UserController {
@@ -19,4 +19,7 @@ public class UserController {
     public User save (@RequestBody User user) {
         return userRepository.save(user);
     }
+
+    @GetMapping("/find-users/list")
+    public List<User> find() {return userRepository.findAll();}
 }

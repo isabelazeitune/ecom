@@ -1,4 +1,4 @@
-package br.com.rd.ecom.user;
+package br.com.rd.ecom.repository;
 
 import br.com.rd.ecom.user.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
