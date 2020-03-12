@@ -1,13 +1,8 @@
 package br.com.rd.ecom.repository;
 
-import br.com.rd.ecom.user.model.Pedido;
-import br.com.rd.ecom.user.model.PedidoItem;
+import br.com.rd.ecom.model.entity.Pedido;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-
-import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
 
 @Repository
 public interface RequestRepository extends JpaRepository<Pedido, Long> {

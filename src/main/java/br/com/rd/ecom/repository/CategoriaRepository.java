@@ -1,6 +1,6 @@
 package br.com.rd.ecom.repository;
 
-import br.com.rd.ecom.user.model.Categoria;
+import br.com.rd.ecom.model.entity.Categoria;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
